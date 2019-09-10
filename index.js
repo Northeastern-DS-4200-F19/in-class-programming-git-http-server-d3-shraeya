@@ -1,8 +1,8 @@
  // javascript
-var dataset = [80, 100, 56, 120, 180, 30, 40, 120, 160];
+var dataset = [80, 100, 56, 120, 180, 30, 40, 120, 160, 300, 5, 500];
 
-var svgWidth = 500;  
-var svgHeight = 400
+var svgWidth = 615;  
+var svgHeight = 525
 var barPadding = 10;
 var barWidth = (svgWidth / dataset.length);
 
@@ -22,7 +22,7 @@ var barChart = svg.selectAll("rect")
         return d; 
     })
     .attr("width", barWidth - barPadding)
-    .style("fill", "red") //enter a color here
+    .style("fill", "purple") //enter a color here
     .attr("transform", function (d, i) {
         var translate = [barWidth * i, 0]; 
         return "translate("+ translate +")";
